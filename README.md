@@ -1,2 +1,2 @@
-# stopwatch
-JavaScript stop watch timer
+# randomcolor
+JavaScript random color flipper

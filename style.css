@@ -1,0 +1,99 @@
+:root {
+    --background-initial: #f1f5f8;
+    --ff-primary: "Roboto", sans-serif;
+    --ff-secondary: "Open Sans", sans-serif;
+    --clr-gray-1: #f8f8f8;
+    --clr-gray-2: #888888;
+    --clr-white: #fff;
+    --clr-black: #000;
+    --radius: 5px;
+}
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--ff-secondary);
+  background: var(--background-initial);
+  color: var(--clr-gray-1);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+}
+
+#buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2, h3 {
+        text-transform: capitalize;
+        font-family: var(--ff-primary);
+ 
+        color: var(--clr-black);
+        border-radius: var(--radius);
+        font-family: "Monaco", "Courier New", monospace;
+    }
+
+    .btn {
+        color: var(--clr-white);
+        background: var(--clr-black);
+        border-radius: var(--radius);
+        border: 1px solid white;
+    }
+
+@media screen and (max-width: 320px) {
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-size: 1.0rem;
+        padding: 0.5rem;
+    }    
+    .btn {
+        padding: 1.2rem;
+        min-width: 160px;
+        margin-bottom: 5px;
+    }
+}
+
+@media screen and (min-width: 321px) and (max-width: 768px) {
+    h2 {
+        font-size: 2rem;
+    }    
+    h3 {
+        font-size: 1.5rem;
+        padding: 1.2rem;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    h2 {
+        font-size: 3rem;
+    }    
+    h3 {
+        font-size: 1.8rem;
+        padding: 2rem;
+    }
+}
+
+@media screen and (min-width: 321px) {
+        .btn {
+        padding: 1.2rem;
+        min-width: 120px;
+        margin-bottom: 5px;
+        padding:4px 6px;
+    }
+}
